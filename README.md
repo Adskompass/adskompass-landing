@@ -5,7 +5,7 @@ Static marketing site for adskompass.com. No build step — these are plain HTML
 ## Files
 
 - `index.html` — the landing page
-- `terms.html` / `privacy.html` — legal pages (currently placeholder legal text — see "Before going live" below)
+- `terms.html` / `privacy.html` — full Terms of Service and Privacy Policy content
 - `favicon.svg` — browser tab icon
 
 ## Local preview
@@ -14,18 +14,17 @@ No server needed. Just open `index.html` directly in a browser (double-click it,
 
 ## Before going live
 
-1. **Paste in your real Terms of Service and Privacy Policy.** Open `terms.html` and `privacy.html`, find the `<!-- PASTE YOUR ... HERE -->` comment block in each, and replace the placeholder paragraph with your actual legal text.
+Done:
+- ✅ Terms of Service / Privacy Policy — full content in `terms.html`/`privacy.html`, converted from `Legal/AdsKompass_Terms_of_Service.md` and `Legal/AdsKompass_Privacy_Policy.md`
+- ✅ Contact form — wired to Formspree (`https://formspree.io/f/mlgyqqjw`)
+- ✅ Telegram handle — `@Thomas_mktai_bot`
 
-2. **Set up the contact form.** The form on `index.html` posts to Formspree, a free service that forwards form submissions to your email with no backend of your own needed.
-   - Go to https://formspree.io and create a free account
-   - Create a new form, copy the form ID it gives you (looks like `xxxxxxxx`)
-   - In `index.html`, find `action="https://formspree.io/f/YOUR_FORM_ID"` and replace `YOUR_FORM_ID` with your real ID
+Still to do:
+1. **Add Google Analytics (optional).** In `index.html`, find the commented-out `<!-- Google Analytics ... -->` block near the top of `<head>`. Once you have a GA4 property, replace both occurrences of `G-XXXXXXXXXX` with your real measurement ID and remove the `<!--` and `-->` comment markers around the block.
 
-3. **Add Google Analytics (optional).** In `index.html`, find the commented-out `<!-- Google Analytics ... -->` block near the top of `<head>`. Once you have a GA4 property, replace both occurrences of `G-XXXXXXXXXX` with your real measurement ID and remove the `<!--` and `-->` comment markers around the block.
+2. **Add a social share image (optional).** `index.html`'s `og:image` tag points to `/og-image.png`, which doesn't exist yet. Add a 1200×630px image at that path if you want a nice preview image when the link is shared on social media/WhatsApp/etc. — without it, shared links just won't show a preview image, everything else still works.
 
-4. **Add a social share image (optional).** `index.html`'s `og:image` tag points to `/og-image.png`, which doesn't exist yet. Add a 1200×630px image at that path if you want a nice preview image when the link is shared on social media/WhatsApp/etc. — without it, shared links just won't show a preview image, everything else still works.
-
-5. **Confirm the Telegram handle.** The contact section links to `https://t.me/AdsKompass_bot` marked as a placeholder — update it in `index.html` to whichever Telegram handle you actually want prospects to message.
+3. **If your legal content changes**, the Markdown sources live at `Legal/AdsKompass_Terms_of_Service.md` and `Legal/AdsKompass_Privacy_Policy.md` in the bot project folder — update those first, then re-convert to `terms.html`/`privacy.html` (ask Claude Code to redo the conversion, or edit the HTML directly for small changes).
 
 ## Deploying to Vercel
 
