@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdsKompass — Your Compass for Smarter Meta Ads</title>
+<meta name="description" content="AI-powered Meta ads management for Malaysian SMEs. 24/7 monitoring, human-approved decisions, a fraction of agency cost. Founders pricing from RM 444/mo.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="AdsKompass — Your Compass for Smarter Meta Ads">
+<meta property="og:description" content="AI-powered Meta ads management for Malaysian SMEs. 24/7 monitoring, human-approved decisions, a fraction of agency cost.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adskompass.com">
+<meta property="og:image" content="https://adskompass.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  @keyframes compass-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .compass-spin { animation: compass-spin 20s linear infinite; }
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+</style>
+
+<!-- Google Analytics (uncomment and replace G-XXXXXXXXXX once you have a real GA4 measurement ID) -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+</head>
+<body class="font-sans text-slate-800 bg-white antialiased">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2">
+      <svg viewBox="0 0 24 24" fill="none" class="w-8 h-8 text-teal-600">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M12 2v2M12 20v2M2 12h2M20 12h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M15.5 8.5L13 13l-4.5 2.5L11 11l4.5-2.5z" fill="currentColor"/>
+      </svg>
+      <span class="text-lg font-bold tracking-tight text-slate-900">AdsKompass</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+      <a href="#how-it-works" class="hover:text-teal-600">How It Works</a>
+      <a href="#features" class="hover:text-teal-600">Features</a>
+      <a href="#pricing" class="hover:text-teal-600">Pricing</a>
+      <a href="#faq" class="hover:text-teal-600">FAQ</a>
+    </nav>
+    <a href="#pricing" class="bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors">Get Founders Pricing</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-6 pt-20 pb-24 text-center">
+  <div class="flex justify-center mb-8">
+    <svg viewBox="0 0 24 24" fill="none" class="w-20 h-20 text-teal-600 compass-spin">
+      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.2"/>
+      <path d="M12 2v2M12 20v2M2 12h2M20 12h2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M15.5 8.5L13 13l-4.5 2.5L11 11l4.5-2.5z" fill="currentColor"/>
+    </svg>
+  </div>
+  <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 max-w-4xl mx-auto">Your compass for smarter Meta ads</h1>
+  <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">AI-powered Meta ads management for Malaysian SMEs — 24/7 monitoring, human-approved decisions, a fraction of agency cost.</p>
+  <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+    <a href="#pricing" class="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3.5 rounded-lg text-base transition-colors">Get Founders Pricing</a>
+    <a href="#contact" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-800 font-semibold px-8 py-3.5 rounded-lg text-base border border-slate-200 transition-colors">Get Your Free Audit Report</a>
+  </div>
+</section>
+
+<!-- PROBLEM / SOLUTION -->
+<section class="bg-slate-50 py-24">
+  <div class="max-w-7xl mx-auto px-6 reveal">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center text-slate-900 mb-4">Meta ads shouldn't feel like guesswork</h2>
+    <p class="text-center text-slate-600 max-w-2xl mx-auto mb-16">Most SME owners are stuck between two bad options. AdsKompass is the third one.</p>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-2xl p-8 border border-slate-200">
+        <h3 class="text-xl font-bold text-slate-900 mb-4">The problem</h3>
+        <ul class="space-y-4 text-slate-600">
+          <li class="flex gap-3"><span class="text-red-500 font-bold">✕</span> Meta Ads Manager is confusing — campaigns, audiences, budgets, none of it explained in plain language</li>
+          <li class="flex gap-3"><span class="text-red-500 font-bold">✕</span> Agencies charge RM 3,000–8,000/month, often with 6-12 month lock-in contracts</li>
+          <li class="flex gap-3"><span class="text-red-500 font-bold">✕</span> You don't have time to check campaign performance every day, let alone optimize it</li>
+        </ul>
+      </div>
+      <div class="bg-teal-600 rounded-2xl p-8 text-white">
+        <h3 class="text-xl font-bold mb-4">The AdsKompass way</h3>
+        <ul class="space-y-4 text-teal-50">
+          <li class="flex gap-3"><span class="font-bold">✓</span> AI monitors your campaigns 24/7 and tells you exactly what's working and what isn't, in plain language</li>
+          <li class="flex gap-3"><span class="font-bold">✓</span> Founders pricing from RM 444/month — a fraction of what an agency charges</li>
+          <li class="flex gap-3"><span class="font-bold">✓</span> Nothing changes on your account without your approval — you stay in control, always</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" class="py-24">
+  <div class="max-w-7xl mx-auto px-6 reveal">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center text-slate-900 mb-16">How it works</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="text-center">
+        <div class="w-14 h-14 rounded-full bg-teal-100 text-teal-700 font-bold text-xl flex items-center justify-center mx-auto mb-5">1</div>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Connect your Meta account</h3>
+        <p class="text-slate-600">Grant secure access in a few clicks. Your credentials are encrypted — you're always in control of what access you give.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-14 h-14 rounded-full bg-teal-100 text-teal-700 font-bold text-xl flex items-center justify-center mx-auto mb-5">2</div>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">AI analyzes 24/7</h3>
+        <p class="text-slate-600">Our AI watches campaign performance, spend efficiency, and audience patterns around the clock — not just when you remember to check.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-14 h-14 rounded-full bg-teal-100 text-teal-700 font-bold text-xl flex items-center justify-center mx-auto mb-5">3</div>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Approve via Telegram</h3>
+        <p class="text-slate-600">When the AI finds an opportunity, it sends you a clear recommendation on Telegram. Nothing executes until you say yes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="bg-slate-50 py-24">
+  <div class="max-w-7xl mx-auto px-6 reveal">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center text-slate-900 mb-16">Everything you need, nothing you don't</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="bg-white rounded-xl p-6 border border-slate-200">
+        <svg viewBox="0 0 24 24" fill="none" class="w-9 h-9 text-teal-600 mb-4"><path d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="font-bold text-slate-900 mb-2">24/7 AI Monitoring</h3>
+        <p class="text-sm text-slate-600">Your campaigns are watched around the clock, not just during office hours.</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 border border-slate-200">
+        <svg viewBox="0 0 24 24" fill="none" class="w-9 h-9 text-teal-600 mb-4"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="font-bold text-slate-900 mb-2">Client Approval Workflow</h3>
+        <p class="text-sm text-slate-600">Every recommendation needs your explicit yes before anything changes.</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 border border-slate-200">
+        <svg viewBox="0 0 24 24" fill="none" class="w-9 h-9 text-teal-600 mb-4"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <h3 class="font-bold text-slate-900 mb-2">Safety Controls</h3>
+        <p class="text-sm text-slate-600">Daily spend caps, budget change limits, and campaign-age locks protect your account automatically.</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 border border-slate-200">
+        <svg viewBox="0 0 24 24" fill="none" class="w-9 h-9 text-teal-600 mb-4"><path d="M3.6 9h16.8M3.6 15h16.8M11.5 3a17 17 0 000 18M12.5 3a17 17 0 010 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/></svg>
+        <h3 class="font-bold text-slate-900 mb-2">Malaysian Context</h3>
+        <p class="text-sm text-slate-600">Built around Malaysian market patterns, seasonality, and festivals — not a generic global template.</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 border border-slate-200">
+        <svg viewBox="0 0 24 24" fill="none" class="w-9 h-9 text-teal-600 mb-4"><path d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.4-4 8-9 8a10 10 0 01-3.5-.6L3 21l1.6-4A7.9 7.9 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="font-bold text-slate-900 mb-2">Multi-Language Support</h3>
+        <p class="text-sm text-slate-600">Reports and recommendations in English, Bahasa Malaysia, or Mandarin — your choice.</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 border border-slate-200">
+        <svg viewBox="0 0 24 24" fill="none" class="w-9 h-9 text-teal-600 mb-4"><path d="M12 15v2M6 10V7a6 6 0 1112 0v3M5 10h14l-1 10H6L5 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="font-bold text-slate-900 mb-2">PDPA Compliant</h3>
+        <p class="text-sm text-slate-600">Your data is handled per Malaysia's Personal Data Protection Act — no exceptions.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-24">
+  <div class="max-w-7xl mx-auto px-6 reveal">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center text-slate-900 mb-4">Simple, transparent pricing</h2>
+    <p class="text-center text-slate-600 max-w-2xl mx-auto mb-16">All plans are Meta Ads only. 30-day money-back guarantee on every tier — cancel anytime.</p>
+
+    <div class="grid md:grid-cols-3 gap-8 items-start">
+
+      <!-- Founders -->
+      <div class="rounded-2xl border-2 border-orange-500 p-8 relative bg-white">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-bold px-4 py-1 rounded-full">FOUNDERS — LIMITED</div>
+        <h3 class="text-lg font-bold text-slate-900 mt-2">Founders</h3>
+        <p class="text-sm text-slate-500 mb-4">Meta Ads Only</p>
+        <div class="text-4xl font-extrabold text-slate-900 mb-1">RM 444<span class="text-base font-medium text-slate-500">/mo</span></div>
+        <p class="text-orange-600 font-semibold text-sm mb-6">Only 5 spots available</p>
+        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> Lifetime-locked price, never increases</li>
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> 24/7 AI monitoring &amp; recommendations</li>
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> Direct Telegram access to the founder, first month</li>
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> 30-day money-back guarantee*</li>
+        </ul>
+        <a href="#contact" class="block text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition-colors">Claim Founders Pricing</a>
+      </div>
+
+      <!-- Standard -->
+      <div class="rounded-2xl border border-slate-200 p-8 bg-white">
+        <h3 class="text-lg font-bold text-slate-900">Standard</h3>
+        <p class="text-sm text-slate-500 mb-4">Meta Ads Only</p>
+        <div class="text-4xl font-extrabold text-slate-900 mb-1">RM 888<span class="text-base font-medium text-slate-500">/mo</span></div>
+        <p class="text-slate-500 text-sm mb-6">For growing ad accounts</p>
+        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> Up to 10 concurrent campaigns</li>
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> Daily + weekly reports</li>
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> 24/7 AI monitoring &amp; recommendations</li>
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> 30-day money-back guarantee*</li>
+        </ul>
+        <a href="#contact" class="block text-center bg-slate-800 hover:bg-slate-900 text-white font-semibold py-3 rounded-lg transition-colors">Get Started</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="rounded-2xl border-2 border-teal-600 p-8 relative bg-white">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal-600 text-white text-xs font-bold px-4 py-1 rounded-full">MOST POPULAR</div>
+        <h3 class="text-lg font-bold text-slate-900 mt-2">Pro</h3>
+        <p class="text-sm text-slate-500 mb-4">Meta Ads Only</p>
+        <div class="text-4xl font-extrabold text-slate-900 mb-1">RM 2,388<span class="text-base font-medium text-slate-500">/mo</span></div>
+        <p class="text-slate-500 text-sm mb-6">For serious ad spend</p>
+        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> Unlimited campaigns</li>
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> Advanced AI: attribution, MMM, A/B testing</li>
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> Priority AI support</li>
+          <li class="flex gap-2"><span class="text-teal-600 font-bold">✓</span> 30-day money-back guarantee*</li>
+        </ul>
+        <a href="#contact" class="block text-center bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 rounded-lg transition-colors">Get Started</a>
+      </div>
+
+    </div>
+    <p class="text-center text-xs text-slate-400 mt-8 max-w-2xl mx-auto">*30-day money-back guarantee applies until 3 recommendations have been approved on your account. Cancel anytime after that — no lock-in contracts.</p>
+  </div>
+</section>
+
+<!-- TRUST SIGNALS -->
+<section class="bg-slate-900 py-16">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center reveal">
+    <div class="text-white">
+      <p class="font-bold">Built for Malaysian SMEs</p>
+    </div>
+    <div class="text-white">
+      <p class="font-bold">PDPA Compliant</p>
+    </div>
+    <div class="text-white">
+      <p class="font-bold">30-Day Money-Back Guarantee</p>
+    </div>
+    <div class="text-white">
+      <p class="font-bold">Proudly Malaysian owned and operated</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-24">
+  <div class="max-w-3xl mx-auto px-6 reveal">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center text-slate-900 mb-16">Frequently asked questions</h2>
+    <div class="space-y-4">
+
+      <details class="group border border-slate-200 rounded-xl p-6" open>
+        <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">How does the AI work?<span class="text-teal-600 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <p class="text-slate-600 mt-4">Our AI continuously reviews your campaign performance — spend, audience response, creative fatigue — and generates specific, explained recommendations. It never acts on its own; every change is sent to you first for approval, typically via Telegram.</p>
+      </details>
+
+      <details class="group border border-slate-200 rounded-xl p-6">
+        <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">Is my Meta account safe?<span class="text-teal-600 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <p class="text-slate-600 mt-4">Yes. Access credentials are encrypted at rest, and built-in safety controls — daily spend caps, budget change limits, campaign-age locks — prevent any single action from going too far, even an approved one.</p>
+      </details>
+
+      <details class="group border border-slate-200 rounded-xl p-6">
+        <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">Is my data safe?<span class="text-teal-600 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <p class="text-slate-600 mt-4">We handle your data in line with Malaysia's Personal Data Protection Act (PDPA). Personal data is deleted within 30 days of account cancellation; we don't sell or share your data with third parties.</p>
+      </details>
+
+      <details class="group border border-slate-200 rounded-xl p-6">
+        <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">What if I'm not satisfied?<span class="text-teal-600 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <p class="text-slate-600 mt-4">Every plan includes a 30-day money-back guarantee, valid until you've approved 3 recommendations on your account. There's no lock-in contract — you can cancel anytime after that.</p>
+      </details>
+
+      <details class="group border border-slate-200 rounded-xl p-6">
+        <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">Can I try before committing?<span class="text-teal-600 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <p class="text-slate-600 mt-4">Yes — request a free audit report first. Grant read-only access to your Meta account and we'll send you a full analysis of where your campaigns stand today, no commitment required.</p>
+      </details>
+
+      <details class="group border border-slate-200 rounded-xl p-6">
+        <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">How is this different from an agency?<span class="text-teal-600 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <p class="text-slate-600 mt-4">Agencies typically charge RM 3,000–8,000/month and often lock you into long contracts. AdsKompass starts from RM 444/month, monitors your account every day instead of a periodic check-in, and never makes a change without your explicit approval.</p>
+      </details>
+
+      <details class="group border border-slate-200 rounded-xl p-6">
+        <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center">Do I need technical knowledge?<span class="text-teal-600 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <p class="text-slate-600 mt-4">No. Recommendations are written in plain language, and you approve or reject them with a single tap on Telegram — no Meta Ads Manager expertise required.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-slate-50 py-24">
+  <div class="max-w-3xl mx-auto px-6 reveal">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center text-slate-900 mb-4">Ready for smarter Meta ads?</h2>
+    <p class="text-center text-slate-600 mb-12">Tell us a bit about your business and we'll be in touch.</p>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-white rounded-2xl border border-slate-200 p-8 space-y-5">
+      <div>
+        <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+        <input type="text" id="name" name="name" required class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal-500">
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+        <input type="email" id="email" name="email" required class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal-500">
+      </div>
+      <div>
+        <label for="business" class="block text-sm font-medium text-slate-700 mb-1">Business name</label>
+        <input type="text" id="business" name="business" required class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal-500">
+      </div>
+      <div>
+        <label for="ad_spend" class="block text-sm font-medium text-slate-700 mb-1">Monthly ad spend (RM)</label>
+        <input type="text" id="ad_spend" name="ad_spend" placeholder="e.g. 5,000" class="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal-500">
+      </div>
+      <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3.5 rounded-lg transition-colors">Send</button>
+    </form>
+
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm">
+      <a href="mailto:hello@adskompass.com" class="flex items-center gap-2 text-slate-700 hover:text-teal-600 font-medium">
+        <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5"><path d="M3 6l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        hello@adskompass.com
+      </a>
+      <a href="https://t.me/AdsKompass_bot" class="flex items-center gap-2 text-slate-700 hover:text-teal-600 font-medium">
+        <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5"><path d="M21 4L2.5 11.5l6 2m12.5-9.5L15.5 21l-7-7.5m12.5-9.5L8.5 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        @AdsKompass_bot <span class="text-xs text-slate-400">(placeholder — confirm handle)</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 text-slate-400 py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between gap-8 mb-8">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6 text-teal-500">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M15.5 8.5L13 13l-4.5 2.5L11 11l4.5-2.5z" fill="currentColor"/>
+          </svg>
+          <span class="text-white font-bold">AdsKompass Marketing</span>
+        </div>
+        <p class="text-sm">BRN: 202603178950 (SA0655421-V)</p>
+        <p class="text-sm">No.85, Lebuh Seri Pekan, Taman Klang Utama, 42100 Klang, Selangor</p>
+      </div>
+      <div class="flex gap-8 text-sm">
+        <a href="/terms.html" class="hover:text-white">Terms of Service</a>
+        <a href="/privacy.html" class="hover:text-white">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-6 text-sm">
+      © 2026 AdsKompass Marketing. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
