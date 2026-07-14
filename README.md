@@ -17,7 +17,7 @@ No server needed. Just open `index.html` directly in a browser (double-click it,
 Done:
 - ✅ Terms of Service / Privacy Policy — full content in `terms.html`/`privacy.html`, converted from `Legal/AdsKompass_Terms_of_Service.md` and `Legal/AdsKompass_Privacy_Policy.md`
 - ✅ Contact form — wired to Formspree (`https://formspree.io/f/mlgyqqjw`)
-- ✅ Telegram handle — `@Thomas_mktai_bot`
+- ✅ Telegram handle — `@AdsKompass_Bot`
 
 Still to do:
 1. **Add Google Analytics (optional).** In `index.html`, find the commented-out `<!-- Google Analytics ... -->` block near the top of `<head>`. Once you have a GA4 property, replace both occurrences of `G-XXXXXXXXXX` with your real measurement ID and remove the `<!--` and `-->` comment markers around the block.
